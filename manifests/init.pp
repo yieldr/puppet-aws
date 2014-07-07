@@ -21,7 +21,6 @@ class aws (
 
   class { 'python':
     pip => true,
-    require => Class['yum'],
   }
 
   python::pip { 'awscli':
